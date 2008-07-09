@@ -1,13 +1,12 @@
-
 UC-LOGIC Tablet WP8060U README
 
-Products
+PRODUCTS
 
 Besides original product produced by UC-LOGIC, the same hardware is used in
 the Genius MousePen 8x6, and possibly some other tablets.
 
 
-Description
+DESCRIPTION
 
 The tablet has 8x6 inches surface with resolution of 16000x12000 points,
 which translates to 200 dpi. The pen has pressure sensitivity of 1024 levels
@@ -17,10 +16,10 @@ registers clicks in corresponding directions. Mouse resolution is unknown
 but seems to be pretty low.
 
 
-Bugs
+BUGS
 
-USB HID input report descriptor has three inputs: one for the mouse and two
-for the tablet.
+USB HID report descriptor has three inputs: one for the mouse and two for
+the tablet.
 
 One of the tablet inputs is quite correct, while the other is seemingly out
 of date and is left there accidentally, but happen to have the correct
@@ -30,7 +29,7 @@ correct, but doesn't have resolution information. Additionally it has an
 extra button which produces strange input of unknown purpose.
 
 
-Fixing
+FIXING
 
 Outdated tablet input is cut off and correct tablet input ID is set to that
 of actually used, removed input. This is triggered by special HID_QUIRK.
@@ -42,6 +41,6 @@ TODO
 
 Instead of simply removing the outdated input from the report descriptor we
 should replace it with better one. The new descriptor should contain
-resolution information for tablet, probably more appropriate pen button
+resolution information for the tablet, probably more appropriate pen buttons
 description and shouldn't contain unknown extra mouse button.
 
