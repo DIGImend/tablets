@@ -4,7 +4,7 @@ UC-LOGIC Tablet WP8060U README
 Products
 
 Besides original product produced by UC-LOGIC, the same hardware is used in
-the Genius WizardPen 8x6, and possibly some other tablets.
+the Genius MousePen 8x6, and possibly some other tablets.
 
 
 Description
