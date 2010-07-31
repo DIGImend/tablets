@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!-- vim:tabstop=2 shiftwidth=2 expandtab nowrap -->
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+
+  <!-- The pen -->
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>9</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <COLLECTION type="physical">
+
+      <!-- The following fields are 1 bit each -->
+      <report_size>1</report_size>
+
+      <!-- Tip, barrel, eraser switches -->
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_eraser<!-- Eraser (45h, momentary control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+      </input>
+
+      <!-- Padding (5 bits) -->
+      <report_count>5</report_count>
+      <input>
+        <constant/>
+      </input>
+
+      <!-- The following fields are 2 bytes each, 1 input - 1 usage -->
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+
+      <!-- Logical extents start from 0 -->
+      <logical_minimum>0</logical_minimum>
+
+      <!-- Push for page and units -->
+      <PUSH>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+
+        <!-- Physical units are inch * 10^-3 -->
+        <unit_exponent>-3</unit_exponent>
+        <unit>
+          <english_linear>
+            <inch/>
+          </english_linear>
+        </unit>
+
+        <!-- Physical extents start from 0 -->
+        <physical_minimum>0</physical_minimum>
+
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <physical_maximum>8000</physical_maximum>
+        <logical_maximum>16000</logical_maximum>
+        <input>
+          <variable/>
+          <absolute/>
+        </input>
+
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <physical_maximum>6000</physical_maximum>
+        <logical_maximum>12000</logical_maximum>
+        <input>
+          <variable/>
+          <absolute/>
+        </input>
+      </PUSH>
+
+      <!-- Tip pressure -->
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>1023</logical_maximum>
+      <input>
+        <variable/>
+        <absolute/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+
+  <!-- The mouse -->
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>8</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <!-- The following fields are 1 bit each -->
+      <report_size>1</report_size>
+
+      <!-- Buttons 1-3 -->
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>03</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+      </input>
+
+      <!-- Padding (5 bits) -->
+      <report_count>5</report_count>
+      <input>
+        <constant/>
+      </input>
+
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+
+      <!-- The following fields are 1 byte each -->
+      <report_size>8</report_size>
+
+      <!-- X, Y [-127, 127] -->
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_count>2</report_count>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+
+      <!-- The wheel [-1, 1] -->
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <logical_minimum>-1</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+
+      <!-- Some garbage, presumably -->
+      <input>
+        <constant/>
+      </input>
+
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
