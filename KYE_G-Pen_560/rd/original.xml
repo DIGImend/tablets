@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>1</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>03</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_size>5</report_size>
+      <report_count>1</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_digitizer<!-- Digitizer (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>2</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>12000</logical_maximum>
+      <physical_minimum>0</physical_minimum>
+      <physical_maximum>32767</physical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <logical_maximum>9000</logical_maximum>
+      <physical_minimum>0</physical_minimum>
+      <physical_maximum>32767</physical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
+      <usage>digitizer_data_valid<!-- Data valid (37h, momentary control) --></usage>
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_tablet_pick<!-- Tablet pick (46h, momentary control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>5</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_size>3</report_size>
+      <report_count>1</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1023</logical_maximum>
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+        <non_linear/>
+      </input>
+      <usage>digitizer_azimuth<!-- Azimuth (3Fh, dynamic value) --></usage>
+      <usage>digitizer_altitude<!-- Altitude (40h, dynamic value) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>255</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>2</report_count>
+      <feature>
+        <variable/>
+      </feature>
+    </COLLECTION>
+    <report_id>5</report_id>
+    <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+    <usage>digitizer_puck<!-- Puck (21h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
+      <usage>digitizer_data_valid<!-- Data valid (37h, momentary control) --></usage>
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_tablet_pick<!-- Tablet pick (46h, momentary control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>5</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_size>3</report_size>
+      <report_count>1</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_d_pad_down<!-- D-pad down (91h, on/off control) --></usage>
+      <usage>desktop_d_pad_up<!-- D-pad up (90h, on/off control) --></usage>
+      <usage>desktop_d_pad_left<!-- D-pad left (93h, on/off control) --></usage>
+      <usage>desktop_d_pad_right<!-- D-pad right (92h, on/off control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>4</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_size>4</report_size>
+      <report_count>1</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage>desktop_hat_switch<!-- Hat switch (39h, dynamic value) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>255</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
