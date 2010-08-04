@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
-<!-- vim:tabstop=2 shiftwidth=2 expandtab nowrap -->
+<!--
+     vim:tabstop=2 shiftwidth=2 expandtab nowrap
+-->
 <descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
 
   <!-- The pen -->
@@ -13,10 +15,10 @@
       <!-- The following fields are 1 bit each -->
       <report_size>1</report_size>
 
-      <!-- Tip, barrel, eraser switches -->
+      <!-- Tip, barrel, tablet pick switches -->
       <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
       <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
-      <usage>digitizer_eraser<!-- Eraser (45h, momentary control) --></usage>
+      <usage>digitizer_tablet_pick<!-- Tablet pick (46h, momentary control) --></usage>
       <logical_minimum>0</logical_minimum>
       <logical_maximum>1</logical_maximum>
       <report_count>3</report_count>
@@ -54,7 +56,7 @@
 
         <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
         <physical_maximum>8000</physical_maximum>
-        <logical_maximum>16000</logical_maximum>
+        <logical_maximum>32767</logical_maximum>
         <input>
           <variable/>
           <absolute/>
@@ -62,7 +64,7 @@
 
         <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
         <physical_maximum>6000</physical_maximum>
-        <logical_maximum>12000</logical_maximum>
+        <logical_maximum>32767</logical_maximum>
         <input>
           <variable/>
           <absolute/>
