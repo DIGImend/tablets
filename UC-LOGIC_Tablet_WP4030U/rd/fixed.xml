@@ -3,8 +3,6 @@
      vim:tabstop=2 shiftwidth=2 expandtab nowrap
 -->
 <descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
-
-  <!-- The pen -->
   <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
   <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
   <COLLECTION type="application">
@@ -78,67 +76,6 @@
         <variable/>
         <absolute/>
       </input>
-    </COLLECTION>
-  </COLLECTION>
-
-  <!-- The mouse -->
-  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
-  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
-  <COLLECTION type="application">
-    <report_id>8</report_id>
-    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
-    <COLLECTION type="physical">
-      <!-- The following fields are 1 bit each -->
-      <report_size>1</report_size>
-
-      <!-- Buttons 1-3 -->
-      <usage_page>button<!-- Button (09h) --></usage_page>
-      <usage_minimum>01</usage_minimum>
-      <usage_maximum>03</usage_maximum>
-      <logical_minimum>0</logical_minimum>
-      <logical_maximum>1</logical_maximum>
-      <report_count>3</report_count>
-      <input>
-        <variable/>
-      </input>
-
-      <!-- Padding (5 bits) -->
-      <report_count>5</report_count>
-      <input>
-        <constant/>
-      </input>
-
-      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
-
-      <!-- The following fields are 1 byte each -->
-      <report_size>8</report_size>
-
-      <!-- X, Y [-127, 127] -->
-      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
-      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
-      <logical_minimum>-127</logical_minimum>
-      <logical_maximum>127</logical_maximum>
-      <report_count>2</report_count>
-      <input>
-        <variable/>
-        <relative/>
-      </input>
-
-      <!-- The wheel [-1, 1] -->
-      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
-      <logical_minimum>-1</logical_minimum>
-      <logical_maximum>1</logical_maximum>
-      <report_count>1</report_count>
-      <input>
-        <variable/>
-        <relative/>
-      </input>
-
-      <!-- Some garbage, presumably -->
-      <input>
-        <constant/>
-      </input>
-
     </COLLECTION>
   </COLLECTION>
 </descriptor>
