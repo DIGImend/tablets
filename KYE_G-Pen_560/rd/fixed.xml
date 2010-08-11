@@ -39,7 +39,7 @@
         <input>
           <variable/>
         </input>
-      </POP>
+      </PUSH>
 
       <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
       <usage>digitizer_data_valid<!-- Data valid (37h, momentary control) --></usage>
