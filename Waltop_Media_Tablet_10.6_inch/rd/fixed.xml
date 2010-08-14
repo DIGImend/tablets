@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<!--
+     vim:tabstop=2 shiftwidth=2 expandtab nowrap
+-->
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>16</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <COLLECTION type="physical">
+
+      <!-- A strange way to report stylus buttons, for sure -->
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_tablet_pick<!-- Tablet pick (46h, momentary control) --></usage>
+      <logical_minimum>1</logical_minimum>
+      <logical_maximum>3</logical_maximum>
+      <report_size>4</report_size>
+      <report_count>1</report_count>
+      <input/>
+
+      <report_size>1</report_size>
+
+      <!-- In-range flag -->
+      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+
+      <!-- Padding -->
+      <report_count>3</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+
+      <!-- Axis -->
+
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <logical_minimum>0</logical_minimum>
+
+      <PUSH>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+
+        <!-- Physical units are inch * 10^-3 -->
+        <unit>
+          <english_linear>
+            <inch/>
+          </english_linear>
+        </unit>
+        <unit_exponent>-3</unit_exponent>
+        <physical_minimum>0</physical_minimum>
+
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <!-- This is only valid for "wide" mode -->
+        <!-- For 4:3 mode it should be 7250 -->
+        <physical_maximum>9000</physical_maximum>
+        <logical_maximum>18000</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <physical_maximum>5500</physical_maximum>
+        <logical_maximum>11000</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+      </PUSH>
+
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>1023</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+
+  <!-- Scroll controls -->
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>1</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <report_count>1</report_count>
+
+      <!-- Padding -->
+      <report_size>24</report_size>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+
+      <!-- Wheel -->
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <logical_minimum>-1</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>8</report_size>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+
+      <!-- Padding -->
+      <report_size>24</report_size>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+
+  <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+
+  <!-- Zoom and "brush" control -->
+  <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>13</report_id>
+    <report_count>1</report_count>
+
+    <!-- Padding -->
+    <report_size>16</report_size>
+    <input>
+      <constant/>
+      <variable/>
+    </input>
+
+    <!-- Keys -->
+    <usage>consumer_ac_zoom</usage>
+    <usage>consumer_ac_zoom_in</usage>
+    <usage>consumer_ac_zoom_out</usage>
+    <usage>consumer_scan_previous_track</usage>
+    <usage>consumer_scan_next_track</usage>
+    <logical_minimum>44</logical_minimum>
+    <logical_maximum>48</logical_maximum>
+    <report_size>8</report_size>
+    <input/>
+
+    <!-- Padding -->
+    <report_size>32</report_size>
+    <input>
+      <constant/>
+      <variable/>
+    </input>
+  </COLLECTION>
+
+  <!-- Volume control -->
+  <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>12</report_id>
+    <report_size>1</report_size>
+
+    <!-- Volume controls -->
+    <usage>consumer_volume_inc<!-- Volume increment (E9h, re-trigger control) --></usage>
+    <usage>consumer_volume_dec<!-- Volume decrement (EAh, re-trigger control) --></usage>
+    <usage>consumer_mute<!-- Mute (E2h, on/off control) --></usage>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <report_count>3</report_count>
+    <input>
+      <variable/>
+      <relative/>
+    </input>
+
+    <!-- Padding -->
+    <report_count>53</report_count>
+    <input>
+      <constant/>
+      <variable/>
+    </input>
+  </COLLECTION>
+</descriptor>
