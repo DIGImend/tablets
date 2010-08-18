@@ -134,8 +134,8 @@
 
     <!-- Keys -->
     <usage>consumer_ac_zoom</usage>
-    <usage>consumer_ac_zoom_in</usage>
     <usage>consumer_ac_zoom_out</usage>
+    <usage>consumer_ac_zoom_in</usage>
     <usage>consumer_scan_previous_track</usage>
     <usage>consumer_scan_next_track</usage>
     <logical_minimum>44</logical_minimum>
