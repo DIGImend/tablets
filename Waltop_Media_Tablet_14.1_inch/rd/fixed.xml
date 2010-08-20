@@ -118,9 +118,10 @@
     </COLLECTION>
   </COLLECTION>
 
+  <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+
   <!-- Zoom control -->
-  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
-  <usage>desktop_keyboard<!-- Keyboard (06h, application collection) --></usage>
+  <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
   <COLLECTION type="application">
     <report_id>13</report_id>
     <report_count>1</report_count>
@@ -132,7 +133,7 @@
       <variable/>
     </input>
 
-    <!-- Zoom controls -->
+    <!-- Keys -->
     <usage>consumer_ac_zoom</usage>
     <usage>0</usage>
     <usage>consumer_ac_zoom_out</usage>
@@ -156,7 +157,6 @@
   </COLLECTION>
 
   <!-- Volume control -->
-  <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
   <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
   <COLLECTION type="application">
     <report_id>12</report_id>
