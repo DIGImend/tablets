@@ -3,6 +3,7 @@
      vim:tabstop=2 shiftwidth=2 expandtab nowrap
 -->
 <descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <!-- The pen -->
   <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
   <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
   <COLLECTION type="application">
@@ -81,7 +82,7 @@
     </COLLECTION>
   </COLLECTION>
 
-  <!-- Scroll controls -->
+  <!-- Scroll control -->
   <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
   <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
   <COLLECTION type="application">
