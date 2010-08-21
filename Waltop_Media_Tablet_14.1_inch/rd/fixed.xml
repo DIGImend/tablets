@@ -89,31 +89,24 @@
     <report_id>1</report_id>
     <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
     <COLLECTION type="physical">
-      <report_count>1</report_count>
+      <report_size>8</report_size>
 
       <!-- Padding -->
-      <report_size>24</report_size>
+      <report_count>3</report_count>
       <input>
         <constant/>
         <variable/>
       </input>
 
-      <!-- Wheel -->
-      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
-      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <!-- Vertical and horizontal wheels -->
+      <report_count>2</report_count>
       <logical_minimum>-1</logical_minimum>
       <logical_maximum>1</logical_maximum>
-      <report_size>8</report_size>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <usage>consumer_ac_pan<!-- AC pan (0238h, linear control) --></usage>
       <input>
         <variable/>
         <relative/>
-      </input>
-
-      <!-- Padding -->
-      <report_size>8</report_size>
-      <input>
-        <constant/>
-        <variable/>
       </input>
     </COLLECTION>
   </COLLECTION>
