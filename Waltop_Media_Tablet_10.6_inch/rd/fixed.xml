@@ -134,17 +134,29 @@
     </input>
 
     <!-- Keys -->
-    <usage>consumer_ac_zoom</usage>
-    <usage>consumer_ac_zoom_out</usage>
-    <usage>consumer_ac_zoom_in</usage>
-    <usage>consumer_scan_previous_track</usage>
-    <usage>consumer_scan_next_track</usage>
-    <logical_minimum>44</logical_minimum>
-    <logical_maximum>48</logical_maximum>
-    <report_size>8</report_size>
+    <usage>consumer_ac_zoom</usage>             <!-- 12 (both versions) -->
+    <usage>consumer_ac_zoom_out</usage>         <!-- 13 (newer version) -->
+    <usage>consumer_ac_zoom_in</usage>          <!-- 14 (newer version) -->
+    <usage>consumer_scan_previous_track</usage> <!-- 15 (only in newer version) -->
+    <usage>consumer_scan_next_track</usage>     <!-- 16 (only in newer version) -->
+    <usage>0</usage>                            <!-- 17 -->
+    <usage>0</usage>                            <!-- 18 -->
+    <usage>0</usage>                            <!-- 19 -->
+    <usage>0</usage>                            <!-- 20 -->
+    <usage>0</usage>                            <!-- 21 -->
+    <usage>consumer_ac_zoom_out</usage>         <!-- 22 (older version) -->
+    <usage>consumer_ac_zoom_in</usage>          <!-- 23 (older version) -->
+    <logical_minimum>12</logical_minimum>
+    <logical_maximum>23</logical_maximum>
+    <report_size>5</report_size>
     <input/>
 
-    <!-- Padding -->
+    <!-- Padding (split into two fields due to the spec's 4 byte limitation) -->
+    <report_size>3</report_size>
+    <input>
+      <constant/>
+      <variable/>
+    </input>
     <report_size>32</report_size>
     <input>
       <constant/>

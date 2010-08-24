@@ -113,7 +113,7 @@
 
   <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
 
-  <!-- Zoom control -->
+  <!-- Zoom and "brush" control -->
   <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
   <COLLECTION type="application">
     <report_id>13</report_id>
@@ -127,17 +127,25 @@
     </input>
 
     <!-- Keys -->
-    <usage>consumer_ac_zoom</usage>
-    <usage>0</usage>
-    <usage>consumer_ac_zoom_out</usage>
-    <usage>consumer_ac_zoom_in</usage>
-    <logical_minimum>4</logical_minimum>
-    <logical_maximum>7</logical_maximum>
-    <report_size>3</report_size>
+    <usage>consumer_ac_zoom</usage>             <!-- 12 (both versions) -->
+    <usage>consumer_ac_zoom_out</usage>         <!-- 13 (newer version) -->
+    <usage>consumer_ac_zoom_in</usage>          <!-- 14 (newer version) -->
+    <usage>consumer_scan_previous_track</usage> <!-- 15 (only in newer version) -->
+    <usage>consumer_scan_next_track</usage>     <!-- 16 (only in newer version) -->
+    <usage>0</usage>                            <!-- 17 -->
+    <usage>0</usage>                            <!-- 18 -->
+    <usage>0</usage>                            <!-- 19 -->
+    <usage>0</usage>                            <!-- 20 -->
+    <usage>0</usage>                            <!-- 21 -->
+    <usage>consumer_ac_zoom_out</usage>         <!-- 22 (older version) -->
+    <usage>consumer_ac_zoom_in</usage>          <!-- 23 (older version) -->
+    <logical_minimum>12</logical_minimum>
+    <logical_maximum>23</logical_maximum>
+    <report_size>5</report_size>
     <input/>
 
     <!-- Padding (split into two fields due to the spec's 4 byte limitation) -->
-    <report_size>5</report_size>
+    <report_size>3</report_size>
     <input>
       <constant/>
       <variable/>
