@@ -1,0 +1,5 @@
+bw procedure:
+press selector repeatedly
+rotate clockwise
+rotate counter-clockwise
+press center button repeatedly
