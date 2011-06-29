@@ -1,0 +1,13 @@
+I: Bus=0003 Vendor=5543 Product=0064 Version=0110
+N: Name="UC-LOGIC TWA60"
+P: Phys=usb-0000:00:1d.2-1/input0
+S: Sysfs=/devices/pci0000:00/0000:00:1d.2/usb4/4-1/4-1:1.0/input/input14
+U: Uniq=
+H: Handlers=mouse1 event6 
+B: PROP=0
+B: EV=1f
+B: KEY=c03 3f0001 0 0 0 0
+B: REL=303
+B: ABS=100000f
+B: MSC=10
+

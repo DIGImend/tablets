@@ -1,0 +1,28 @@
+TWA60
+
+Manufacturer: UC-LOGIC
+
+Class
+0
+((Defined at Interface level))
+Subclass
+0
+Protocol
+0
+USB Version
+1.01
+Vendor ID
+0x5543
+(UC-Logic Technology Corp.)
+Product ID
+0x64
+(Aiptek HyperPen 10000U)
+Revision
+0.00
+Speed
+12 Mbit/s
+Channels
+0
+Max. Packet Size
+8
+
