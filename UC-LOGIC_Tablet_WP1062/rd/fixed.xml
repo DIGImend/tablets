@@ -67,7 +67,7 @@
         </input>
 
         <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
-        <physical_maximum>6250</physical_maximum>
+        <physical_maximum>6583</physical_maximum>
         <logical_maximum>13166</logical_maximum>
         <input>
           <variable/>
