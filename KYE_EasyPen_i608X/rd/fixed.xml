@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<!--
+     vim:tabstop=2 shiftwidth=2 expandtab nowrap
+-->
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <!-- The pen -->
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_digitizer<!-- Pen (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>16</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <!-- Logical extents always start from 0 -->
+      <logical_minimum>0</logical_minimum>
+
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_tablet_pick<!-- Tablet pick (46h, momentary control) --></usage>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+      </input>
+
+      <report_count>4</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+
+      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+
+      <!-- The following fields are 2 bytes each, 1 input - 1 usage -->
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+
+      <!-- Push for page and units -->
+      <PUSH>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+
+        <!-- Physical units are inch * 10^-3 -->
+        <unit_exponent>-3</unit_exponent>
+        <unit>
+          <english_linear>
+            <inch/>
+          </english_linear>
+        </unit>
+
+        <!-- Physical extents start from 0 -->
+        <physical_minimum>0</physical_minimum>
+
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <physical_maximum>8000</physical_maximum>
+        <logical_maximum>20480</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <physical_maximum>6000</physical_maximum>
+        <logical_maximum>15360</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+      </PUSH>
+
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>1023</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>17</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <!-- Logical extents start from 0 -->
+      <logical_minimum>0</logical_minimum>
+
+      <!-- Push for usage page -->
+      <PUSH>
+        <usage_page>button<!-- Button (09h) --></usage_page>
+
+        <!-- The following fields are 1 bit each -->
+        <report_size>1</report_size>
+
+        <!-- Buttons 1-3 -->
+        <usage_minimum>01</usage_minimum>
+        <usage_maximum>03</usage_maximum>
+        <logical_maximum>1</logical_maximum>
+        <report_count>3</report_count>
+        <input>
+          <variable/>
+        </input>
+
+        <!-- Padding (5 bits) - ignore proximity in the last bit -->
+        <report_count>5</report_count>
+        <input>
+          <constant/>
+        </input>
+      </PUSH>
+
+      <!-- The following fields are 1 input - 1 usage -->
+      <report_count>1</report_count>
+
+      <!-- Push for units -->
+      <PUSH>
+        <!-- Physical units are inch * 10^-3 -->
+        <unit_exponent>-3</unit_exponent>
+        <unit>
+          <english_linear>
+            <inch/>
+          </english_linear>
+        </unit>
+
+        <!-- Physical extents start from 0 -->
+        <physical_minimum>0</physical_minimum>
+
+        <!-- The following fields are 2 bytes each -->
+        <report_size>16</report_size>
+
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <physical_maximum>8000</physical_maximum>
+        <logical_maximum>20480</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <physical_maximum>6000</physical_maximum>
+        <logical_maximum>15360</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+      </PUSH>
+
+      <!-- The following fields are 1 byte each -->
+      <report_size>8</report_size>
+
+      <!-- The wheel -->
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <logical_minimum>-1</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+
+      <!-- Padding -->
+      <input>
+        <constant/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
