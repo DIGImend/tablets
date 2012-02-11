@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+    <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+    <COLLECTION type="logical">
+      <report_id>1</report_id>
+      <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+      <COLLECTION type="physical">
+        <usage_page>button<!-- Button (09h) --></usage_page>
+        <usage_minimum>01</usage_minimum>
+        <usage_maximum>05</usage_maximum>
+        <report_count>5</report_count>
+        <report_size>1</report_size>
+        <logical_minimum>0</logical_minimum>
+        <logical_maximum>1</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+        <report_count>3</report_count>
+        <input>
+          <constant/>
+        </input>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <report_count>2</report_count>
+        <report_size>8</report_size>
+        <logical_minimum>-127</logical_minimum>
+        <logical_maximum>127</logical_maximum>
+        <input>
+          <variable/>
+          <relative/>
+        </input>
+        <COLLECTION type="logical">
+          <report_id>2</report_id>
+          <usage>desktop_resolution_multiplier<!-- Resolution multiplier (48h, dynamic value) --></usage>
+          <logical_minimum>0</logical_minimum>
+          <logical_maximum>1</logical_maximum>
+          <physical_minimum>1</physical_minimum>
+          <physical_maximum>4</physical_maximum>
+          <report_count>1</report_count>
+          <report_size>2</report_size>
+          <feature>
+            <variable/>
+          </feature>
+          <report_id>1</report_id>
+          <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+          <physical_minimum>0</physical_minimum>
+          <physical_maximum>0</physical_maximum>
+          <logical_minimum>-127</logical_minimum>
+          <logical_maximum>127</logical_maximum>
+          <report_size>8</report_size>
+          <input>
+            <variable/>
+            <relative/>
+          </input>
+        </COLLECTION>
+        <COLLECTION type="logical">
+          <report_id>2</report_id>
+          <usage>desktop_resolution_multiplier<!-- Resolution multiplier (48h, dynamic value) --></usage>
+          <logical_minimum>0</logical_minimum>
+          <logical_maximum>1</logical_maximum>
+          <physical_minimum>1</physical_minimum>
+          <physical_maximum>4</physical_maximum>
+          <report_size>2</report_size>
+          <feature>
+            <variable/>
+          </feature>
+          <physical_minimum>0</physical_minimum>
+          <physical_maximum>0</physical_maximum>
+          <report_size>4</report_size>
+          <feature>
+            <constant/>
+          </feature>
+          <report_id>1</report_id>
+          <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+          <usage>consumer_ac_pan<!-- AC pan (0238h, linear control) --></usage>
+          <logical_minimum>-127</logical_minimum>
+          <logical_maximum>127</logical_maximum>
+          <report_size>8</report_size>
+          <input>
+            <variable/>
+            <relative/>
+          </input>
+        </COLLECTION>
+      </COLLECTION>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>8</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>03</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_size>5</report_size>
+      <report_count>1</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <usage>0</usage>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>4</report_count>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_joystik<!-- Joystik (04h, application collection) --></usage>
+  <COLLECTION type="application">
+    <COLLECTION type="logical">
+      <report_id>17</report_id>
+      <report_size>1</report_size>
+      <report_count>1</report_count>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <physical_minimum>0</physical_minimum>
+      <physical_maximum>1</physical_maximum>
+      <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+      <usage>01</usage>
+      <input>
+        <variable/>
+      </input>
+      <report_count>11</report_count>
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>0B</usage_maximum>
+      <input>
+        <variable/>
+      </input>
+      <report_count>1</report_count>
+      <report_size>4</report_size>
+      <logical_maximum>7</logical_maximum>
+      <physical_maximum>315</physical_maximum>
+      <unit>
+        <english_rotation>
+          <degrees/>
+        </english_rotation>
+      </unit>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_hat_switch<!-- Hat switch (39h, dynamic value) --></usage>
+      <input>
+        <variable/>
+        <null_state/>
+      </input>
+      <unit>
+        <none/>
+      </unit>
+      <report_count>5</report_count>
+      <report_size>8</report_size>
+      <logical_maximum>255</logical_maximum>
+      <physical_maximum>255</physical_maximum>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <usage>desktop_z<!-- Z (32h, dynamic value) --></usage>
+      <usage>desktop_rz<!-- Rz (35h, dynamic value) --></usage>
+      <usage>desktop_slider<!-- Slider (36h, dynamic value) --></usage>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
