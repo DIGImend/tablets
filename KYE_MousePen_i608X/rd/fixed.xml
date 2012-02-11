@@ -3,9 +3,24 @@
      vim:tabstop=2 shiftwidth=2 expandtab nowrap
 -->
 <descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <!-- Control feature -->
+  <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+  <usage>01</usage>
+  <COLLECTION type="application">
+    <report_id>5</report_id>
+    <usage>01</usage>
+    <logical_minimum>-128</logical_minimum>
+    <logical_maximum>127</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>7</report_count>
+    <feature>
+      <variable/>
+    </feature>
+  </COLLECTION>
+
   <!-- The pen -->
   <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
-  <usage>digitizer_digitizer<!-- Pen (02h, application collection) --></usage>
+  <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
   <COLLECTION type="application">
     <report_id>16</report_id>
     <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
