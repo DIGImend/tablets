@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!--
+     vim:tabstop=2 shiftwidth=2 expandtab nowrap
+-->
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <!-- Control feature -->
+  <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+  <usage>01</usage>
+  <COLLECTION type="application">
+    <report_id>5</report_id>
+    <usage>01</usage>
+    <logical_minimum>-128</logical_minimum>
+    <logical_maximum>127</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>7</report_count>
+    <feature>
+      <variable/>
+    </feature>
+  </COLLECTION>
+
+  <!-- The pen -->
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>16</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <!-- Logical extents always start from 0 -->
+      <logical_minimum>0</logical_minimum>
+
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_tablet_pick<!-- Tablet pick (46h, momentary control) --></usage>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+      </input>
+
+      <report_count>4</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+
+      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+
+      <!-- The following fields are 2 bytes each, 1 input - 1 usage -->
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+
+      <!-- Push for page and units -->
+      <PUSH>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+
+        <!-- Physical units are inch * 10^-3 -->
+        <unit_exponent>-3</unit_exponent>
+        <unit>
+          <english_linear>
+            <inch/>
+          </english_linear>
+        </unit>
+
+        <!-- Physical extents start from 0 -->
+        <physical_minimum>0</physical_minimum>
+
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <physical_maximum>5500</physical_maximum>
+        <logical_maximum>14080</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <physical_maximum>4000</physical_maximum>
+        <logical_maximum>10240</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+      </PUSH>
+
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>1023</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
