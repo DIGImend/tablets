@@ -3,7 +3,7 @@ VID: "172f"
 PID: "0500"
 vendor: Waltop
 product: 'Media Tablet 14.1" v1.14'
-image: Genius_G-Pen_M712X
+image: Genius_G-Pen_M712
 working_area:
     width: 12
     height: 7.25
@@ -19,7 +19,8 @@ maybe_sold_as:
     - Adesso CyberTablet M14
     - iVista Media Tablet 14.1
     - "PENTAGRAM O'pen Wide P 2004"
-support:
+supported: true
+supported_in:
     kernel: ">= 2.6.37 (1365x2260 LPI)"
 ---
 This is an older version of Waltop Media Tablet 14.1" v5.1e. The difference
