@@ -2,7 +2,7 @@
 VID: "172f"
 PID: "0500"
 vendor: Waltop
-product: Media Tablet 14.1" v1.14
+product: 'Media Tablet 14.1" v1.14'
 image: Genius_G-Pen_M712X
 working_area:
     width: 12
@@ -15,10 +15,10 @@ sold_as:
     - Genius G-Pen M712
 maybe_sold_as:
     - Aiptek MediaTablet 14000u
-    - Trust item #15358
+    - "Trust item #15358"
     - Adesso CyberTablet M14
     - iVista Media Tablet 14.1
-    - PENTAGRAM O'pen Wide P 2004
+    - "PENTAGRAM O'pen Wide P 2004"
 support:
     kernel: ">= 2.6.37 (1365x2260 LPI)"
 ---

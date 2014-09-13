@@ -13,5 +13,5 @@ pen:
     pressure_levels: 2048
     tilt_detection: true
 maybe_sold_as:
-    - Trust eBrush Widescreen Tablet (#17939)
+    - "Trust eBrush Widescreen Tablet (#17939)"
 ---

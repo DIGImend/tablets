@@ -14,7 +14,7 @@ pen:
 mouse:
     absolute: false
 sold_as:
-    - Trust Stylus Design Tablet / Slimline Design Tablet TB-5300 (#15356)
+    - "Trust Stylus Design Tablet / Slimline Design Tablet TB-5300 (#15356)"
     - Genius WizardPen 5x4
     - Genius MousePen 5x4
     - Genius EasyPen i405

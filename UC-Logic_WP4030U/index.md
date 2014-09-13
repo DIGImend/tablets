@@ -12,7 +12,7 @@ report_rate: 100
 pen:
     pressure_levels: 1024
 sold_as:
-    - Trust item #16486
+    - "Trust item #16486"
     - Genius WizardPen 4x3
     - Aquila L1
 maybe_sold_as:

@@ -16,7 +16,7 @@ mouse:
 sold_as:
     - Genius MousePen 8x6
     - Genius MousePen i608
-    - Trust Slimline Sketch Tablet (#16447)
+    - "Trust Slimline Sketch Tablet (#16447)"
     - NGS Draw Master
     - Monoprice 8X6 Inches Graphic Drawing Tablet
 maybe_sold_as:

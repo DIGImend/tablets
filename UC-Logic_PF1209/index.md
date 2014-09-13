@@ -15,7 +15,7 @@ mouse:
     absolute: false
 sold_as:
     - Genius PenSketch 12x9
-    - Monoprice 12x9 Inches Graphic Drawing Tablet (#6815)
+    - "Monoprice 12x9 Inches Graphic Drawing Tablet (#6815)"
 maybe_sold_as:
     - Adesso CT-12000A
     - Iball Design Tablet PF1209

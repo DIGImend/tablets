@@ -17,7 +17,7 @@ maybe_sold_as:
     - VisTablet PenPad
     - iVistaTablet Q Flex Pad
     - Bravod Q-PD65-S
-    - Trust Flex Design Tablet (#16937)
+    - "Trust Flex Design Tablet (#16937)"
 support:
     kernel: ">= 3.4"
 ---
