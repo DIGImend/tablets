@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# Generate tablet image thumbnails
+#
+
+set -e -u -o pipefail
+
+for f in */index.md; do
+    d=${f%/*}
+    b="$d"/`awk '/^image:/ {print $2}' "$f"`
+    convert -geometry 64x64 "$b".jpg "$b".thumb.jpg
+done
