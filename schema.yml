@@ -1,0 +1,65 @@
+type: map
+mapping:
+    "VID":
+        type: text
+        required: yes
+        pattern: /[0-9a-f]{4}/
+    "PID":
+        type: text
+        required: yes
+        pattern: /[0-9a-f]{4}/
+    "vendor":
+        type: text
+        required: yes
+    "product":
+        type: text
+        required: yes
+    "image":
+        type: text
+    "report_rate":
+        type: int
+    "working_area":
+        type: map
+        required: yes
+        mapping:
+            "width":
+                type: number
+                required: yes
+            "height":
+                type: number
+                required: yes
+            "resolution":
+                type: int
+                required: yes
+    "pen":
+        type: map
+        required: yes
+        mapping:
+            "pressure_levels":
+                type: int
+                required: yes
+            "tilt_detection":
+                type: bool
+    "mouse":
+        type: map
+        mapping:
+            "absolute":
+                type: bool
+                required: yes
+    "frame_controls":
+        type: text
+    "sold_as":
+        type: seq
+        sequence:
+            - type: text
+    "maybe_sold_as":
+        type: seq
+        sequence:
+            - type: text
+    "support":
+        type: map
+        mapping:
+            "kernel":
+                type: text
+            "wacom":
+                type: text
