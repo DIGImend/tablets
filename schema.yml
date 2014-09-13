@@ -1,3 +1,6 @@
+#
+# Kwalify schema for tablet data in each tablet's index.md front matter
+#
 type: map
 mapping:
     "VID":
