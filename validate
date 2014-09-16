@@ -1,0 +1,63 @@
+#!/bin/bash
+#
+# Validate tablet data
+#
+
+set -e -u -o pipefail
+
+# Execute kwalify with document on stdin, overriding file name, appropriately
+# directed output and appropriate exit status.
+#
+# Args: filename [kwalify_arg...]
+# Stdout: successful output with overriden filename
+# Stderr: error output with overriden filename
+#
+function kwalify_strict()
+{
+    declare -r filename="$1";   shift
+    declare output
+    read -r -d '' output < <(
+        kwalify "$@"
+    ) || true
+    if [[ $output == *[^A-Za-z]valid[^A-Za-z]* ]]; then
+        printf '%s\n' "${output//(stdin)/$filename}"
+        return 0
+    else
+        printf '%s\n' "${output//(stdin)/$filename}" >&2
+        return 1
+    fi
+}
+
+kwalify_strict schema.yml -m < schema.yml >/dev/null
+
+declare failed=false
+declare f
+declare yaml
+declare image_name
+declare image_file
+
+for f in */index.md; do
+    read -r -d '' yaml < <(
+        sed -ne '/^---$/,/^---$/ {/^---$/b; p}' "$f"
+    ) || true
+
+    kwalify_strict "$f" -f schema.yml <<<"$yaml" >/dev/null ||
+        { failed=false; continue; }
+
+    read -r -d '' image_name < <(
+        awk '/^\s*image:\s+/ {print $2}' <<<"$yaml"
+    ) || true
+
+    if [ -z "$image_name" ]; then
+        printf "%s: image is not specified\\n" "$f" >&2
+        failed=true
+        continue
+    fi
+    image_file="${f%index.md}/${image_name}.jpg"
+    if ! [ -e "$image_file" ]; then
+        printf "%s: image doesn't exist: %s\\n" "$f" "$image_file" >&2
+        failed=true
+    fi
+done
+
+"$failed"
