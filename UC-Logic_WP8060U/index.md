@@ -11,8 +11,7 @@ working_area:
 report_rate: 100
 pen:
     pressure_levels: 1024
-mouse:
-    absolute: false
+mouse: relative
 sold_as:
     - Genius MousePen 8x6
     - Genius MousePen i608

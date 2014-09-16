@@ -11,8 +11,7 @@ working_area:
 report_rate: 200
 pen:
     pressure_levels: 1024
-mouse:
-    absolute: true
+mouse: absolute
 frame_controls: 4 buttons ("desktop", "flip 3D", "next page", "previous page")
 sold_as:
     - Genius MousePen M508W

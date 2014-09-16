@@ -11,8 +11,7 @@ working_area:
 report_rate: 300
 pen:
     pressure_levels: 2048
-mouse:
-    absolute: true
+mouse: absolute
 frame_controls: 8 buttons ("eraser", "undo", "new layer", "flip 3D", "brush increase", "brush decrease", "zoom in", "zoom out")
 sold_as:
     - Genius PenSketch M912

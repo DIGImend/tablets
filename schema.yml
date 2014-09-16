@@ -44,11 +44,8 @@ mapping:
             "tilt_detection":
                 type: bool
     "mouse":
-        type: map
-        mapping:
-            "absolute":
-                type: bool
-                required: yes
+        type: str
+        enum: [absolute, relative]
     "frame_controls":
         type: text
     "sold_as":

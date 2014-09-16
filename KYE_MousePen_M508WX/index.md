@@ -11,8 +11,7 @@ working_area:
 report_rate: 300
 pen:
     pressure_levels: 2048
-mouse:
-    absolute: true
+mouse: absolute
 frame_controls: 4 buttons ("undo", "eraser", "zoom in", "zoom out")
 sold_as:
     - Genius MousePen M508WX

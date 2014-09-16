@@ -11,8 +11,7 @@ working_area:
 report_rate: 200
 pen:
     pressure_levels: 1024
-mouse:
-    absolute: false
+mouse: relative
 sold_as:
     - Genius PenSketch 12x9
     - "Monoprice 12x9 Inches Graphic Drawing Tablet (#6815)"

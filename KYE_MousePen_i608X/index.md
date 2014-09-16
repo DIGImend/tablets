@@ -11,8 +11,7 @@ working_area:
     resolution: 2560
 pen:
     pressure_levels: 1024
-mouse:
-    absolute: true
+mouse: absolute
 sold_as:
     - Genius MousePen i608X
 supported: true

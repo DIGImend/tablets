@@ -11,8 +11,7 @@ working_area:
 report_rate: 100
 pen:
     pressure_levels: 1024
-mouse:
-    absolute: false
+mouse: relative
 sold_as:
     - "Trust Stylus Design Tablet / Slimline Design Tablet TB-5300 (#15356)"
     - Genius WizardPen 5x4
