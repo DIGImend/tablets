@@ -14,8 +14,6 @@ pen:
 frame_controls: 4 buttons ("undo", "eraser", "next page", "previous page") 
 sold_as:
     - Genius EasyPen M610
-support:
-    kernel:
 ---
 The tablet has two interfaces. It was also seen to switch between default and proprietary modes without apparent cause.
 
