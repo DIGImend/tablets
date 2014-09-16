@@ -19,6 +19,7 @@ mapping:
         required: yes
     "image":
         type: text
+        required: yes
     "report_rate":
         type: int
     "working_area":
