@@ -14,7 +14,8 @@ sold_as:
     - Genius G-Pen F509
 maybe_sold_as:
     - Manhattan 177405
-support:
+supported: true
+supported_in:
     kernel: ">= 3.4"
 ---
 This tablet is not listed on Waltop website, so no name is assigned, the product ID is used to identify it instead. Curiously, in default mode, this model reports full pressure whenever a side pen button is pressed. This is being worked around in the kernel driver. No other Waltop tablet has shown such behavior so far.

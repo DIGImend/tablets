@@ -17,7 +17,8 @@ sold_as:
     - PENTAGRAM Designer P 2700
 maybe_sold_as:
     - Princeton PTB-S1BK
-support:
+supported: true
+supported_in:
     kernel: ">= 3.5 (2000 LPI, no horizontal scrolling)"
     wacom: ">= 0.18.0"
 ---

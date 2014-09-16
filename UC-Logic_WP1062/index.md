@@ -16,6 +16,7 @@ sold_as:
     - Monoprice 10X6.25 Inches Graphic Drawing Tablet
 maybe_sold_as:
     - Pickle 10x6.25 Inch Graphic Drawing tablet
-support:
+supported: true
+supported_in:
     kernel: ">= 3.1"
 ---

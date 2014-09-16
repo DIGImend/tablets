@@ -15,7 +15,8 @@ frame_controls: 4 buttons ("desktop", "flip 3D", "next page", "previous page") o
 sold_as:
     - Genius EasyPen M610
     - Monoprice MP1060-HA60
-support:
+supported: true
+supported_in:
     kernel: ">= 3.7"
 ---
 There are two versions of this tablet, one represented by Genius EasyPen M610, another by Monoprice MP1060-HA60. The Genius version has 4 frame buttons and lower power requirement - 160mA. The Monoprice version has 8 frame buttons and requires 300mA.

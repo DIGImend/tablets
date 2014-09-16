@@ -22,6 +22,7 @@ maybe_sold_as:
     - Adesso CyberTablet Z7
     - DigiPro WP5540
     - Iball Pen Tablet 5540U
-support:
+supported: true
+supported_in:
     kernel: ">= 2.6.36"
 ---

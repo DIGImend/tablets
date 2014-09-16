@@ -15,7 +15,8 @@ mouse:
     absolute: true
 sold_as:
     - Genius MousePen i608X
-support:
+supported: true
+supported_in:
     kernel: ">= 3.4"
 ---
 A [patch](http://thread.gmane.org/gmane.linux.kernel.input/23744/focus=23799) supporting this tablet was accepted into the kernel 3.4 release.

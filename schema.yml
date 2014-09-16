@@ -59,7 +59,9 @@ mapping:
         type: seq
         sequence:
             - type: text
-    "support":
+    "supported":
+        type: bool
+    "supported_in":
         type: map
         mapping:
             "kernel":

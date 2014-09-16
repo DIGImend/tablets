@@ -23,6 +23,7 @@ maybe_sold_as:
     - DigiPro WP8060
     - Manhattan 8"x6"
     - Iball Pen Tablet 8060U
-support:
+supported: true
+supported_in:
     kernel: ">= 2.6.36"
 ---

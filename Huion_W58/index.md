@@ -13,7 +13,8 @@ pen:
     pressure_levels: 2048
 sold_as:
     - Huion W58
-support:
+supported: true
+supported_in:
     kernel: ">= 3.11"
 ---
 This is a wireless version of Huion K58.

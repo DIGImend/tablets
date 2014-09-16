@@ -19,6 +19,7 @@ maybe_sold_as:
     - Manhattan 3"x4"
     - Monoprice 4X3
     - Iball Pen Tablet 4030U
-support:
+supported: true
+supported_in:
     kernel: ">= 2.6.36"
 ---

@@ -13,7 +13,8 @@ pen:
     pressure_levels: 2048
 sold_as:
     - Huion K58
-support:
+supported: true
+supported_in:
     kernel: ">= 3.11"
 ---
 Support for this tablet was included into kernel v3.11 release. An out-of-tree [driver](https://github.com/DIGImend/huion-driver) supporting v3.5 and later kernels is also available.

@@ -19,7 +19,8 @@ maybe_sold_as:
     - Adesso CyberTablet M14
     - iVista Media Tablet 14.1
     - "PENTAGRAM O'pen Wide P 2004"
-support:
+supported: true
+supported_in:
     kernel: ">= 2.6.37 (1365x2260 LPI)"
 ---
 This is a newer version of Waltop Media Tablet 14.1" v1.14. The difference

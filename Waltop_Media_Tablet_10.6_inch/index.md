@@ -17,7 +17,8 @@ sold_as:
 maybe_sold_as:
     - iVista Media Tablet 10.6
     - Aiptek MediaTablet 10000u
-support:
+supported: true
+supported_in:
     kernel: ">= 2.6.37 (2000 LPI)"
 ---
 There are at least two versions of this model in the wild. They are represented by Genius G-Pen M609 (older version) and Genius G-Pen M609X (newer version).

@@ -24,6 +24,7 @@ maybe_sold_as:
     - NGS Slim Pro
     - iVistaTablet Slim 12.1
     - PENTAGRAM ThinType P 2006
-support:
+supported: true
+supported_in:
     kernel: ">= 2.6.37"
 ---

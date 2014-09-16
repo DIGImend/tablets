@@ -16,7 +16,8 @@ mouse:
 frame_controls: 4 buttons ("desktop", "flip 3D", "next page", "previous page")
 sold_as:
     - Genius MousePen M508W
-support:
+supported: true
+supported_in:
     kernel: ">= 3.5 (frame buttons mixed up)"
 ---
 A [patch](http://thread.gmane.org/gmane.linux.kernel.input/25190/focus=25202) adding support for this tablet was accepted into 3.5 kernel release.

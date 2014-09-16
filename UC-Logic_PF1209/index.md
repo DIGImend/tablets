@@ -19,6 +19,7 @@ sold_as:
 maybe_sold_as:
     - Adesso CT-12000A
     - Iball Design Tablet PF1209
-support:
+supported: true
+supported_in:
     kernel: ">= 2.6.36"
 ---

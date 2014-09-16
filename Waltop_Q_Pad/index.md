@@ -18,7 +18,8 @@ maybe_sold_as:
     - iVistaTablet Q Flex Pad
     - Bravod Q-PD65-S
     - "Trust Flex Design Tablet (#16937)"
-support:
+supported: true
+supported_in:
     kernel: ">= 3.4"
 ---
 A [patch](http://thread.gmane.org/gmane.linux.kernel.input/23608) supporting this tablet was accepted into the kernel 3.4 release.

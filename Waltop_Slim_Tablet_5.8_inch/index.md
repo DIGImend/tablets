@@ -17,6 +17,7 @@ sold_as:
 maybe_sold_as:
     - VisTablet Mini
     - iVistaTablet Slim 5.8
-support:
+supported: true
+supported_in:
     kernel: ">= 2.6.37"
 ---

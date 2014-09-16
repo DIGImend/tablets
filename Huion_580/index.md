@@ -14,7 +14,8 @@ pen:
 sold_as:
     - Huion 580
     - Turcom TS-6580B
-support:
+supported: true
+supported_in:
     kernel: ">= 3.11"
 ---
 Support for this tablet was included into kernel v3.11 release. An out-of-tree [driver](https://github.com/DIGImend/huion-driver) supporting v3.5 and later kernels is also available.

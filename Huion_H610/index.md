@@ -14,7 +14,8 @@ pen:
 frame_controls: 8 buttons (undo, erase, pencil, zoom in, zoom out, brush increase, brush decrease, grab)
 sold_as:
     - Huion H610
-support:
+supported: true
+supported_in:
     kernel: ">=3.17"
 ---
 An out-of-tree [driver](https://github.com/DIGImend/huion-driver) supporting this tablet was implemented. It will be merged into mainline kernel as soon as more Huion tablet models are tested.
