@@ -25,7 +25,7 @@ supported_in:
 A [patch](http://thread.gmane.org/gmane.linux.kernel.input/24153) adding support for this tablet was [accepted](http://thread.gmane.org/gmane.linux.kernel.input/24153/focus=24241) into the kernel.
 
 Reports
-=======
+-------
 
 As probably all the other Waltop tablets, this tablet has other modes than the default. One such mode is enabled by sending 0x10, 0x01 as feature report with ID 0x02.
 
@@ -33,8 +33,7 @@ After that, the tablet starts reporting pen coordinates in full resolution of 40
 
 The structure of the reports becomes the following.
 
-0x02
-----
+### 0x02 ###
 
 This is the pen report.
 
@@ -54,8 +53,7 @@ This is the pen report.
 
 The tilt measurement is quite imprecise. The zero position is tilted about 15 degrees towards the bottom edge of the tablet. The negative/positive tilting angle values are not equal. The change speed looks more like the sine of the angle, than the angle. Maximum seen angles so far are [-69, 69] and [-71, 73] for X and Y tilt correspondingly.
 
-0x05
-----
+### 0x05 ###
 
 This is the pen report for working area border locations. Probably intended for detecting the "virtual" button clicks. Probably, indescribable with a HID report descriptor.
 
@@ -72,8 +70,7 @@ This is the pen report for working area border locations. Probably intended for 
 |4|32-39|The higher byte of the Y axis value last reported with report 0x02. Basically, garbage.|
 |5-7|40-63|Padding (always zero)|
 
-0x0A
-----
+### 0x0A ###
 
 This report is used for all the frame buttons and most of the dials' functions. The button reports are 10 bytes long, the dials' report are 8. The second byte signifies the "subreport" ID.
 
@@ -81,7 +78,7 @@ The overloaded usage probably makes this report impossible to describe fully wit
 
 Subreport descriptions follow.
 
-### 0x0E
+#### 0x0E ####
 
 This is the frame button subreport.
 
@@ -106,7 +103,7 @@ This is the frame button subreport.
 ||30-31|Padding (always zero)|
 |4-9|32-79|Padding (always zero)|
 
-### 0x02
+#### 0x02 ####
 
 This is the dials subreport. Note: it is only used for vertical/horizontal scroll and zoom/volume functions. For cursor movement function 0x0D report is used instead.
 
@@ -121,8 +118,7 @@ This is the dials subreport. Note: it is only used for vertical/horizontal scrol
 
 The finger sensing is quite imprecise to the point of reporting wrong direction or not reporting change when moving slowly.
 
-0x0D
-----
+### 0x0D ###
 
 This is keyboard-imitating report for the dials' "cursor movement" function. The report is 8 bytes long. Only byte with offset 3 is used. The values are as follows.
 
