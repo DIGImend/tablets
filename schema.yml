@@ -64,5 +64,7 @@ mapping:
         mapping:
             "kernel":
                 type: text
+            "digimend":
+                type: text
             "wacom":
                 type: text
