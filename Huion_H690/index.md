@@ -17,4 +17,5 @@ sold_as:
 supported: true
 supported_in:
     kernel: ">=3.17"
+    digimend: ">=5"
 ---

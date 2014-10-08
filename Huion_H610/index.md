@@ -17,6 +17,7 @@ sold_as:
 supported: true
 supported_in:
     kernel: ">=3.17"
+    digimend: ">=5"
 ---
 An out-of-tree [driver](https://github.com/DIGImend/huion-driver) supporting this tablet was implemented. It will be merged into mainline kernel as soon as more Huion tablet models are tested.
 

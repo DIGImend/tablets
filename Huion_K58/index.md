@@ -16,6 +16,7 @@ sold_as:
 supported: true
 supported_in:
     kernel: ">= 3.11"
+    digimend: ">=5"
 ---
 Support for this tablet was included into kernel v3.11 release. An out-of-tree [driver](https://github.com/DIGImend/huion-driver) supporting v3.5 and later kernels is also available.
 

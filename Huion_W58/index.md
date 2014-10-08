@@ -17,6 +17,7 @@ sold_as:
 supported: true
 supported_in:
     kernel: ">= 3.11"
+    digimend: ">=5"
 ---
 This is a wireless version of Huion K58.
 
