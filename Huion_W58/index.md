@@ -13,6 +13,7 @@ pen:
     pressure_levels: 2048
 sold_as:
     - Huion W58
+    - Huion W58L
 supported: true
 supported_in:
     kernel: ">= 3.11"
