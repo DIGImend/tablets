@@ -4,18 +4,18 @@
 type: map
 mapping:
     "VID":
-        type: text
+        type: str
         required: yes
         pattern: /[0-9a-f]{4}/
     "PID":
-        type: text
+        type: str
         required: yes
         pattern: /[0-9a-f]{4}/
     "vendor":
-        type: text
+        type: str
         required: yes
     "product":
-        type: text
+        type: str
         required: yes
     "image":
         type: text

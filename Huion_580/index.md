@@ -2,7 +2,7 @@
 VID: "256c"
 PID: "006e"
 vendor: Huion
-product: 580
+product: "580"
 image: Huion_580
 report_rate: 220
 working_area:
