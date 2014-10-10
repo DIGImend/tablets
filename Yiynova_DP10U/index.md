@@ -17,5 +17,5 @@ sold_as:
 frame_controls: 6 buttons (Page Up, Page Down, Zoom In, Zoom Out, Brightness Up, Brightness Down)
 supported: true
 supported_in:
-    digimend: ">=5"
+    digimend: ">= 5"
 ---

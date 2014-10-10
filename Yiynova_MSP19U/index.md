@@ -15,5 +15,5 @@ sold_as:
     - Yiynova MSP19U
 supported: true
 supported_in:
-    digimend: ">=5"
+    digimend: ">= 5"
 ---

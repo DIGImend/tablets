@@ -16,6 +16,6 @@ sold_as:
     - Huion H690
 supported: true
 supported_in:
-    kernel: ">=3.17"
-    digimend: ">=5"
+    kernel: ">= 3.17"
+    digimend: ">= 5"
 ---

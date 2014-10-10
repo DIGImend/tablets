@@ -17,5 +17,5 @@ sold_as:
 frame_controls: 8 buttons (Enter, Zoom Out, Page Down, Right, Left, Page Up, Zoom In, Esc)
 supported: true
 supported_in:
-    digimend: ">=5"
+    digimend: ">= 5"
 ---
