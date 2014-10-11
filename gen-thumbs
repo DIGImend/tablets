@@ -8,5 +8,9 @@ set -e -u -o pipefail
 for f in */index.md; do
     d=${f%/*}
     b="$d"/`awk '/^image:/ {print $2}' "$f"`
-    convert -geometry 100x100 "$b".jpg "$b".thumb.jpg
+    i="$b".jpg
+    t="$b".thumb.jpg
+    if [ "$i" -nt "$t" ]; then
+        convert -geometry 100x100 "$b".jpg "$b".thumb.jpg
+    fi
 done
