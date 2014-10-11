@@ -30,7 +30,7 @@ function kwalify_strict()
 
 kwalify_strict schema.yml -m < schema.yml >/dev/null
 
-declare failed=false
+declare passed=true
 declare f
 declare yaml
 declare image_name
@@ -42,7 +42,7 @@ for f in */index.md; do
     ) || true
 
     kwalify_strict "$f" -f schema.yml <<<"$yaml" >/dev/null ||
-        { failed=false; continue; }
+        { passed=false; continue; }
 
     read -r -d '' image_name < <(
         awk '/^\s*image:\s+/ {print $2}' <<<"$yaml"
@@ -50,14 +50,14 @@ for f in */index.md; do
 
     if [ -z "$image_name" ]; then
         printf "%s: image is not specified\\n" "$f" >&2
-        failed=true
+        passed=false
         continue
     fi
     image_file="${f%index.md}/${image_name}.jpg"
     if ! [ -e "$image_file" ]; then
         printf "%s: image doesn't exist: %s\\n" "$f" "$image_file" >&2
-        failed=true
+        passed=false
     fi
 done
 
-"$failed"
+"$passed"
