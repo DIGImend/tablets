@@ -14,5 +14,5 @@ pen:
 sold_as:
     - Huion K26
 ---
-This tablet is likely to be supported by an out-of-tree [driver](https://github.com/DIGImend/huion-driver). Please report your testing results to [DIGImend-devel](mailto:DIGImend-devel@lists.sourceforge.net).
+This tablet is likely to be supported by an out-of-tree [driver](https://github.com/DIGImend/digimend-kernel-drivers). Please report your testing results to [DIGImend-devel](mailto:DIGImend-devel@lists.sourceforge.net).
 
