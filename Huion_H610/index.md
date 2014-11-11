@@ -14,6 +14,7 @@ pen:
 frame_controls: 8 buttons (undo, erase, pencil, zoom in, zoom out, brush increase, brush decrease, grab)
 sold_as:
     - Huion H610
+    - Monoprice 10 x 6.25-inch Graphic Drawing Tablet (Product 10594)
 supported: true
 supported_in:
     kernel: ">= 3.17"
