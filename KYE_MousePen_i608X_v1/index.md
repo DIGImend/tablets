@@ -2,7 +2,7 @@
 VID: "0458"
 PID: "5011"
 vendor: KYE
-product: MousePen i608X
+product: MousePen i608X v1
 image: Genius_MousePen_i608X
 report_rate: 100
 working_area:
