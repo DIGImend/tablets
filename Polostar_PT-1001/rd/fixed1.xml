@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>1</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage>01</usage>
+      <usage>03</usage>
+      <usage>02</usage>
+      <usage>04</usage>
+      <usage>05</usage>
+      <report_count>5</report_count>
+      <report_size>1</report_size>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <report_count>3</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <report_count>2</report_count>
+      <report_size>16</report_size>
+      <logical_minimum>-32767</logical_minimum>
+      <logical_maximum>32767</logical_maximum>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>1</report_count>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+      <usage>consumer_ac_pan<!-- AC pan (0238h, linear control) --></usage>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+  <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>5</report_id>
+    <report_count>1</report_count>
+    <report_size>8</report_size>
+    <input>
+      <constant/>
+    </input>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <report_size>1</report_size>
+    <report_count>18</report_count>
+    <usage>consumer_al_consumer_control_config<!-- AL consumer control configuration (0183h, selector) --></usage>
+    <usage>consumer_al_email_reader<!-- AL email reader (018Ah, selector) --></usage>
+    <usage>consumer_al_calculator<!-- AL calculator (0192h, selector) --></usage>
+    <usage>consumer_al_local_machine_brwsr<!-- AL local machine browser (0194h, selector) --></usage>
+    <usage>consumer_ac_search<!-- AC search (0221h, selector) --></usage>
+    <usage>consumer_ac_home<!-- AC home (0223h, selector) --></usage>
+    <usage>consumer_ac_back<!-- AC back (0224h, selector) --></usage>
+    <usage>consumer_ac_forward<!-- AC forward (0225h, selector) --></usage>
+    <usage>consumer_ac_stop<!-- AC stop (0226h, selector) --></usage>
+    <usage>consumer_ac_refresh<!-- AC refresh (0227h, selector) --></usage>
+    <usage>consumer_ac_bookmarks<!-- AC bookmarks (022Ah, selector) --></usage>
+    <usage>consumer_scan_next_track<!-- Scan next track (B5h, one-shot control) --></usage>
+    <usage>consumer_scan_previous_track<!-- Scan previous track (B6h, one-shot control) --></usage>
+    <usage>consumer_stop<!-- Stop (B7h, one-shot control) --></usage>
+    <usage>consumer_play_pause<!-- Play/pause (CDh, one-shot control) --></usage>
+    <usage>consumer_mute<!-- Mute (E2h, on/off control) --></usage>
+    <usage>consumer_volume_inc<!-- Volume increment (E9h, re-trigger control) --></usage>
+    <usage>consumer_volume_dec<!-- Volume decrement (EAh, re-trigger control) --></usage>
+    <input>
+      <variable/>
+      <no_preferred/>
+      <null_state/>
+    </input>
+    <report_count>6</report_count>
+    <report_size>1</report_size>
+    <input>
+      <constant/>
+      <variable/>
+    </input>
+  </COLLECTION>
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_digitizer<!-- Digitizer (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>9</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_tablet_pick<!-- Tablet pick (46h, momentary control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>3</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <report_count>5</report_count>
+      <input>
+        <constant/>
+      </input>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>4096</logical_maximum>
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <PUSH>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+        <unit_exponent>-2</unit_exponent>
+        <unit>
+          <si_linear>
+            <centimeter/>
+          </si_linear>
+        </unit>
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <physical_minimum>0</physical_minimum>
+        <physical_maximum>1056</physical_maximum>
+        <input>
+          <variable/>
+        </input>
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <physical_maximum>660</physical_maximum>
+        <input>
+          <variable/>
+        </input>
+      </PUSH>
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>1023</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
