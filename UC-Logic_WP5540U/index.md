@@ -17,6 +17,7 @@ sold_as:
     - Genius WizardPen 5x4
     - Genius MousePen 5x4
     - Genius EasyPen i405
+    - Ugee M540
 maybe_sold_as:
     - Adesso CyberTablet Z7
     - DigiPro WP5540
