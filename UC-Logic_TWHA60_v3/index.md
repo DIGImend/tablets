@@ -14,5 +14,7 @@ pen:
 frame_controls: 8 buttons ("copy", "cut", "paste", "group", "zoom in", "zoom out", "save", "close window")
 sold_as:
     - Monoprice MP1060-HA60
-supported: false
+supported: true
+supported_in:
+    digimend: ">= 6 (in development)"
 ---

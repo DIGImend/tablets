@@ -19,4 +19,5 @@ maybe_sold_as:
 supported: true
 supported_in:
     kernel: ">= 3.1"
+    digimend: ">= 6 (in development)"
 ---

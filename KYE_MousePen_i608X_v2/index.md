@@ -14,6 +14,7 @@ pen:
 mouse: absolute
 sold_as:
     - Genius MousePen i608X
-supported: false
+supported: true
 supported_in:
+    digimend: ">= 6 (in development)"
 ---
