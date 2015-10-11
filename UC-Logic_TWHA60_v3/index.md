@@ -16,5 +16,5 @@ sold_as:
     - Monoprice MP1060-HA60
 supported: true
 supported_in:
-    digimend: ">= 6 (in development)"
+    digimend: ">= 6"
 ---

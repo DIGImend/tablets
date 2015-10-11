@@ -15,5 +15,5 @@ frame_controls: 8 buttons
 sold_as:
 supported: true
 supported_in:
-    digimend: ">= 6 (in development)"
+    digimend: ">= 6"
 ---

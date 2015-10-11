@@ -16,5 +16,5 @@ sold_as:
     - Ugee G3
 supported: true
 supported_in:
-    digimend: ">= 6 (in development)"
+    digimend: ">= 6"
 ---

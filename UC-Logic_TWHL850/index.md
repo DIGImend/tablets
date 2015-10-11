@@ -18,7 +18,7 @@ sold_as:
 supported: true
 supported_in:
     kernel: ">= 3.5 (frame buttons mixed up)"
-    digimend: ">= 6 (in development)"
+    digimend: ">= 6"
 ---
 A [patch](http://thread.gmane.org/gmane.linux.kernel.input/25190/focus=25202) adding support for this tablet was accepted into 3.5 kernel release.
 

@@ -17,7 +17,7 @@ sold_as:
 supported: true
 supported_in:
     kernel: ">= 3.4 (\"eraser\" button as \"redo\" - to be fixed)"
-    digimend: ">= 6 (in development)"
+    digimend: ">= 6"
 ---
 A [patch](http://thread.gmane.org/gmane.linux.kernel.input/23744/focus=23799) supporting this tablet was accepted into the kernel 3.4 release.
 

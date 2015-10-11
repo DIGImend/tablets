@@ -16,5 +16,5 @@ sold_as:
     - Genius MousePen i608X
 supported: true
 supported_in:
-    digimend: ">= 6 (in development)"
+    digimend: ">= 6"
 ---

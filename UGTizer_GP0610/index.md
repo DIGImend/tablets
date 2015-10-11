@@ -17,5 +17,5 @@ sold_as:
     - UGTizer GT1060
 supported: true
 supported_in:
-    digimend: ">= 6 (in development, pen only - no frame controls)"
+    digimend: ">= 6 (pen only - no frame controls)"
 ---

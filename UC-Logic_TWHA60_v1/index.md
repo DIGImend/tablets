@@ -17,7 +17,7 @@ sold_as:
 supported: true
 supported_in:
     kernel: ">= 3.7"
-    digimend: ">= 6 (in development)"
+    digimend: ">= 6"
 ---
 As this tablet has other versions with different number and different
 assignments of frame buttons, they are simply mapped to F1-F24 range and are
