@@ -13,6 +13,9 @@ pen:
     pressure_levels: 2048
 sold_as:
     - Huion K26
+    - Huion P608N
+supported: true
+supported_in:
+    digimend: ">= 6"
 ---
-This tablet is likely to be supported by an out-of-tree [driver](https://github.com/DIGImend/digimend-kernel-drivers). Please report your testing results to [DIGImend-devel](mailto:DIGImend-devel@lists.sourceforge.net).
 
