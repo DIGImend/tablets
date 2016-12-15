@@ -15,5 +15,7 @@ frame_controls: 4 buttons ("undo", "eraser", "layers", "brushes")
 sold_as:
     - Genius EasyPen M406XE
 supported: true
+supported_in:
+    digimend: ">= 7"
 ---
 "eraser", "layers", "brushes" buttons work as "redo", "zoom in", "zoom out" respectively
