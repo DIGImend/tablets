@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_digitizer<!-- Digitizer (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>7</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_eraser<!-- Eraser (45h, momentary control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_count>2</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_count>2</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <PUSH>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <unit>
+          <english_linear>
+            <inch/>
+          </english_linear>
+        </unit>
+        <unit_exponent>13</unit_exponent>
+        <physical_minimum>0</physical_minimum>
+        <physical_maximum>5500</physical_maximum>
+        <logical_maximum>22000</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <physical_maximum>4000</physical_maximum>
+        <logical_maximum>16000</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+      </PUSH>
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <physical_maximum>0</physical_maximum>
+      <logical_maximum>1023</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>8</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>03</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>3</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <report_count>5</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <usage>0</usage>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>4</report_count>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>9</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>03</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>3</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <report_count>5</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <logical_maximum>32767</logical_maximum>
+      <report_count>2</report_count>
+      <report_size>16</report_size>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>1023</logical_maximum>
+      <report_count>1</report_count>
+      <report_size>16</report_size>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>0</usage>
+  <COLLECTION type="application">
+    <report_id>4</report_id>
+    <COLLECTION type="physical">
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>255</logical_maximum>
+      <usage>0</usage>
+      <report_size>8</report_size>
+      <report_count>3</report_count>
+      <feature>
+        <variable/>
+      </feature>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
