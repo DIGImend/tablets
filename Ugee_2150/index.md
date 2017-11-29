@@ -2,7 +2,7 @@
 VID: "5543"
 PID: "0047"
 vendor: Ugee
-product: 2150
+product: "2150"
 image: Ugee_2150
 report_rate: 220
 working_area:
