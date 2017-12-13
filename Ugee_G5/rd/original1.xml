@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_digitizer<!-- Digitizer (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>7</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_eraser<!-- Eraser (45h, momentary control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_count>2</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_count>2</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <physical_minimum>0</physical_minimum>
+      <PUSH>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <unit>
+          <english_linear>
+            <inch/>
+          </english_linear>
+        </unit>
+        <unit_exponent>13</unit_exponent>
+        <physical_maximum>820</physical_maximum>
+        <logical_maximum>45720</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <physical_maximum>1101</physical_maximum>
+        <logical_maximum>29210</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+      </PUSH>
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <physical_maximum>0</physical_maximum>
+      <logical_maximum>2047</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage>digitizer_configuration<!-- Configuration (0Eh, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>5</report_id>
+    <usage>digitizer_device_settings<!-- Device settings (23h, logical collection) --></usage>
+    <COLLECTION type="logical">
+      <usage>digitizer_device_mode<!-- Device input mode (52h, dynamic value) --></usage>
+      <usage>digitizer_device_identifier<!-- Device identifier (53h, dynamic value) --></usage>
+      <logical_maximum>10</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>2</report_count>
+      <feature>
+        <variable/>
+      </feature>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+  <usage>consumer_function_buttons<!-- Function buttons (36h, named array) --></usage>
+  <COLLECTION type="physical">
+    <report_id>6</report_id>
+    <usage_page>button<!-- Button (09h) --></usage_page>
+    <usage_minimum>01</usage_minimum>
+    <usage_maximum>20</usage_maximum>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <report_count>32</report_count>
+    <report_size>1</report_size>
+    <input>
+      <variable/>
+    </input>
+  </COLLECTION>
+</descriptor>
