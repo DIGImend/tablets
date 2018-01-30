@@ -15,6 +15,5 @@ sold_as:
     - Leogics PT-1001
 supported: true
 supported_in:
-    kernel: ">= 2.6.36"
     digimend: ">= 6"
 ---
