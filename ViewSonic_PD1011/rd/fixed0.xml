@@ -73,6 +73,7 @@
       <report_count>1</report_count>
 
       <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_minimum>5</logical_minimum>
       <logical_maximum>2047</logical_maximum>
       <input>
         <variable/>
