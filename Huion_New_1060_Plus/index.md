@@ -13,6 +13,7 @@ pen:
     pressure_levels: 2048
 frame_controls: 12 buttons
 sold_as:
+    - Gaomon M106K
 supported: false
 supported_in:
 ---
