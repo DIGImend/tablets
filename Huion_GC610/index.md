@@ -13,8 +13,7 @@ pen:
     pressure_levels: 8192
 frame_controls: multi-touch pad, 6 buttons
 sold_as:
-    - Huion GC610
-    - Huion Inspiroy GC610 Graphics Drawing Tablet
+    - Huion Inspiroy GC610
 supported: false
 supported_in:
 ---

@@ -13,8 +13,7 @@ pen:
     pressure_levels: 8192
 frame_controls: 8 buttons
 sold_as:
-    - Huion H950P
-    - Huion Inspiroy H950P Graphics Drawing Tablet
+    - Huion Inspiroy H950P
 supported: false
 supported_in:
 ---
