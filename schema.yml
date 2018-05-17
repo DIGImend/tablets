@@ -3,68 +3,110 @@
 #
 type: map
 mapping:
+    # Vendor ID number (VID) as seen in `lsusb` or `lsusb -v` output,
+    # four lowercase hexadecimal digits.
+    #
+    # E.g. this line of `lsusb` output has VID "5543":
+    # Bus 005 Device 002: ID 5543:0005 UC-Logic Technology Corp. Genius MousePen 8x6 Tablet
+    #
+    # Same as this line in `lsusb -v` output:
+    # idVendor           0x5543 UC-Logic Technology Corp.
     "VID":
         type: str
         required: yes
         pattern: /[0-9a-f]{4}/
+    # Product ID number (PID) as seen in lsusb output,
+    # four lowercase hexadecimal digits.
+    #
+    # E.g. this line of `lsusb` output has PID "0005":
+    # Bus 005 Device 002: ID 5543:0005 UC-Logic Technology Corp. Genius MousePen 8x6 Tablet
+    #
+    # Same as this line in `lsusb -v` output:
+    # idProduct          0x0005 Genius MousePen 8x6 Tablet
     "PID":
         type: str
         required: yes
         pattern: /[0-9a-f]{4}/
+    # Tablet manufacturer/vendor name determined according to procedure
+    # described under "Tablet names" in README.md
     "vendor":
         type: str
         required: yes
+    # Tablet product/model name determined according to procedure described
+    # under "Tablet names" in README.md
     "product":
         type: str
         required: yes
+    # Name of the JPEG image file in the same directory, without the ".jpg"
+    # extension, containing a photo of one of the versions of the tablet.
+    # Should be the "tablet identifier" (see README.md) of the specific tablet
+    # on the photo.
     "image":
         type: text
         required: yes
+    # Tablet report rate in reports per second (RPS)
     "report_rate":
         type: int
+    # Tablet active working area parameters
     "working_area":
         type: map
         required: yes
         mapping:
+            # Width, inches
             "width":
                 type: number
                 required: yes
+            # Height, inches
             "height":
                 type: number
                 required: yes
+            # Resolution, lines per inch (LPI)
             "resolution":
                 type: int
                 required: yes
+    # Pen parameters
     "pen":
         type: map
         required: yes
         mapping:
+            # Number of distinct pressure levels reported
             "pressure_levels":
                 type: int
                 required: yes
+            # True, if tilt angles are reported, false or missing, if not
             "tilt_detection":
                 type: bool
+    # Mouse reporting type, if present
     "mouse":
         type: str
         enum: [absolute, relative]
+    # Free-form description of controls on the tablet frame
     "frame_controls":
         type: text
+    # Other brand and model names of the same tablets
     "sold_as":
         type: seq
         sequence:
             - type: text
+    # Possible (unconfirmed) other brand and model names
     "maybe_sold_as":
         type: seq
         sequence:
             - type: text
+    # True, if the tablet is supported in general,
+    # i.e. can be configured to work in Linux, false, if not
     "supported":
         type: bool
+    # Versions of various software packages which support the tablet
     "supported_in":
         type: map
         mapping:
+            # Versions of the Linux kernel
             "kernel":
                 type: text
+            # Versions of the DIGImend out-of-tree driver
             "digimend":
                 type: text
+            # Versions of the Wacom X.org driver
             "wacom":
                 type: text
