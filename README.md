@@ -65,7 +65,7 @@ model name. Preserve the original character case. Add extra identifying
 information (such as version) after another underscore.
 
 E.g. "Waltop Slim Tablet 12.1"" would become `Waltop_Slim_Tablet_12.1_inch`,
-"Yiynova MVP10UHD+IPS" would become "Yiynova_MVP10UHD+IPS", and version three
+"Yiynova MVP10UHD+IPS" would become `Yiynova_MVP10UHD+IPS`, and version three
 of "UC-Logic TWHA60" would become `UC-Logic_TWHA60_v3`.
 
 Photos
