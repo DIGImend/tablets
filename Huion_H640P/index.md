@@ -13,8 +13,7 @@ pen:
     pressure_levels: 8192
 frame_controls: 6 buttons
 sold_as:
-    - Huion H640P
-    - Huion Inspiroy H640P Graphics Drawing Tablet
+    - Huion Inspiroy H640P
 supported: false
 supported_in:
 ---

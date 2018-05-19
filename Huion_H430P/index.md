@@ -13,8 +13,7 @@ pen:
     pressure_levels: 4096
 frame_controls: 4 buttons
 sold_as:
-    - Huion H430P
-    - Huion Inspiroy H430P Graphics Drawing Tablet
+    - Huion Inspiroy H430P
 supported: false
 supported_in:
 ---

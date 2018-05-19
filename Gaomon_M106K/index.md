@@ -2,18 +2,18 @@
 VID: "256c"
 PID: "006e"
 vendor: Huion
-product: GC610
-image: Huion_GC610
+product: Gaomon
+image: Gaomon_M106K
 report_rate: 233
 working_area:
     width: 10
-    height: 6.25
+    height: 6
     resolution: 5080
 pen:
-    pressure_levels: 8192
-frame_controls: multi-touch pad, 6 buttons
+    pressure_levels: 2048
+frame_controls: 12 buttons
 sold_as:
-    - Huion Inspiroy GC610
+    - Gaomon M106K
 supported: false
 supported_in:
 ---

@@ -13,8 +13,7 @@ pen:
     pressure_levels: 8192
 frame_controls: 6 buttons
 sold_as:
-    - Huion G10T
-    - Huion Inspiroy G10T Graphics Drawing Tablet
+    - Huion Inspiroy G10T
 supported: false
 supported_in:
 ---
