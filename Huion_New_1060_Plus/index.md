@@ -14,6 +14,7 @@ pen:
 frame_controls: 12 buttons
 sold_as:
     - Gaomon M106K
-supported: false
+supported: true
 supported_in:
+    digimend: ">= 8"
 ---

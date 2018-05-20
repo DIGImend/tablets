@@ -14,6 +14,7 @@ pen:
 frame_controls: 6 buttons
 sold_as:
     - Huion Inspiroy H640P
-supported: false
+supported: true
 supported_in:
+    digimend: ">= 8"
 ---

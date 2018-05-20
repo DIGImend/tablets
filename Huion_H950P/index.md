@@ -14,6 +14,7 @@ pen:
 frame_controls: 8 buttons
 sold_as:
     - Huion Inspiroy H950P
-supported: false
+supported: true
 supported_in:
+    digimend: ">= 8"
 ---

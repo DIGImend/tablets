@@ -14,6 +14,7 @@ pen:
 frame_controls: 4 buttons
 sold_as:
     - Huion Inspiroy H430P
-supported: false
+supported: true
 supported_in:
+    digimend: ">= 8"
 ---
