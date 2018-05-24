@@ -13,6 +13,7 @@ pen:
     pressure_levels: 8192
 frame_controls: 8 buttons
 sold_as:
-supported: false
+supported: true
 supported_in:
+    digimend: ">= 8"
 ---
