@@ -1,19 +1,19 @@
 
-Bus 003 Device 007: ID 256c:006e  
+Bus 003 Device 007: ID 256c:006e
 Device Descriptor:
   bLength                18
   bDescriptorType         1
   bcdUSB               1.10
   bDeviceClass            0 (Defined at Interface level)
-  bDeviceSubClass         0 
-  bDeviceProtocol         0 
+  bDeviceSubClass         0
+  bDeviceProtocol         0
   bMaxPacketSize0         8
-  idVendor           0x256c 
-  idProduct          0x006e 
+  idVendor           0x256c
+  idProduct          0x006e
   bcdDevice            0.00
   iManufacturer           5 (error)
   iProduct                6 (error)
-  iSerial                 0 
+  iSerial                 0
   bNumConfigurations      1
   Configuration Descriptor:
     bLength                 9
@@ -21,7 +21,7 @@ Device Descriptor:
     wTotalLength           59
     bNumInterfaces          2
     bConfigurationValue     1
-    iConfiguration          0 
+    iConfiguration          0
     bmAttributes         0xa0
       (Bus Powered)
       Remote Wakeup
@@ -35,7 +35,7 @@ Device Descriptor:
       bInterfaceClass         3 Human Interface Device
       bInterfaceSubClass      1 Boot Interface Subclass
       bInterfaceProtocol      2 Mouse
-      iInterface              0 
+      iInterface              0
         HID Device Descriptor:
           bLength                 9
           bDescriptorType        33
@@ -44,7 +44,7 @@ Device Descriptor:
           bNumDescriptors         1
           bDescriptorType        34 Report
           wDescriptorLength      18
-         Report Descriptors: 
+         Report Descriptors:
            ** UNAVAILABLE **
       Endpoint Descriptor:
         bLength                 7
@@ -65,7 +65,7 @@ Device Descriptor:
       bInterfaceClass         3 Human Interface Device
       bInterfaceSubClass      1 Boot Interface Subclass
       bInterfaceProtocol      2 Mouse
-      iInterface              0 
+      iInterface              0
         HID Device Descriptor:
           bLength                 9
           bDescriptorType        33
@@ -74,7 +74,7 @@ Device Descriptor:
           bNumDescriptors         1
           bDescriptorType        34 Report
           wDescriptorLength      83
-         Report Descriptors: 
+         Report Descriptors:
            ** UNAVAILABLE **
       Endpoint Descriptor:
         bLength                 7
