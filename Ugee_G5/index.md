@@ -13,6 +13,7 @@ pen:
     pressure_levels: 2048
 frame_controls: scroll wheel, 5 buttons
 sold_as:
+    - XP-Pen Star 05
 supported: true
 supported_in:
     digimend: ">= 8"
