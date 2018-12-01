@@ -16,4 +16,5 @@ sold_as:
     - Huion Inspiroy WH1409
 supported: false
 supported_in:
+    digimend: ">= 9"
 ---
