@@ -14,7 +14,7 @@ pen:
 frame_controls: 12 buttons
 sold_as:
     - Huion Inspiroy WH1409
-supported: false
+supported: true
 supported_in:
     digimend: ">= 9"
 ---
