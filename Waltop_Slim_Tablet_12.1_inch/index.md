@@ -14,6 +14,7 @@ pen:
 sold_as:
     - Genius G-Pen F610
     - "Trust Slimline Widescreen Tablet (#16529)"
+    - Medion Graphics Pad MD 85637 (c. 2010)
 maybe_sold_as:
     - 'VisTablet Original 12"'
     - Adesso CyberTablet Z12
