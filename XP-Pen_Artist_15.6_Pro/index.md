@@ -8,7 +8,7 @@ report_rate: 200
 working_area:
     width: 16
     height: 9
-    resolution: 5080
+    resolution: 2540
 pen:
     pressure_levels: 8192
 frame_controls: 8 buttons
