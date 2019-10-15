@@ -11,7 +11,7 @@ working_area:
     resolution: 5080
 pen:
     pressure_levels: 8192
-    tilt_detection: true
+    tilt_detection: false
 frame_controls: 4 buttons on top
 sold_as:
     - Huion HS64
