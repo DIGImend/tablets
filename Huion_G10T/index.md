@@ -15,5 +15,5 @@ frame_controls: 6 buttons
 sold_as:
     - Huion Inspiroy G10T
 supported: false
-supported_in:
+supported_in:https://github.com/dannytaylor/pinspiroy
 ---
