@@ -1,0 +1,4 @@
+These tests were in fact run after uc-logic decode.
+I can also confirm, that the vid:pid of my tablet changes from 28bd:0905 to 28bd:1227 when running
+uc-logic decode. Also: in xinput --list a device named UGTABLET kbd pops up, seems like there it is,
+but no ouput still.

@@ -1,0 +1,7 @@
+Trying to get any diagnostics after the vid:pid change evoked through uc-logic probe with usbhid-dump for
+this directory proved futile. I had to re-plug the tablet and get the old 28bd:0905 back instead of the 28bd:1227
+so that I can leave any infos here.
+
+On pen_pressure.txt
+There seems to be a blinking LED for both of the buttons, however only the bottom one seems to evoke a variation in the long input stream, the top one only blinks the blue tablet LED. Could be there is something up where this
+button refuses to work, though it is hard to tell and likely just speculation.
