@@ -13,5 +13,5 @@ pen:
     pressure_levels: 8192
     tilt_detection: true
 frame_controls: 12 buttons, touch ring with a center button
-supported: false
+supported: True
 ---
