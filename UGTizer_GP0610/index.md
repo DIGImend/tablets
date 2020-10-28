@@ -15,6 +15,7 @@ frame_controls: 6 buttons, 1 scroll "roller"
 sold_as:
     - iBall PF1064U
     - UGTizer GT1060
+    - Trust Graphic Tablet Widescreen (145f:0212)
 supported: true
 supported_in:
     digimend: ">= 6 (pen only - no frame controls)"
