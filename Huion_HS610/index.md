@@ -13,5 +13,7 @@ pen:
     pressure_levels: 8192
     tilt_detection: true
 frame_controls: 12 buttons, touch ring with a center button
+sold_as:
+    - Gaomon M10K Pro
 supported: false
 ---
