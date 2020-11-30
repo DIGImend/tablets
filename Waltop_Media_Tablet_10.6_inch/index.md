@@ -14,6 +14,7 @@ pen:
 sold_as:
     - Genius G-Pen M609
     - Genius G-Pen M609X
+    - Silvercrest GTA2000 aka SGT 10.6 A1/A2 aka DT53600
 maybe_sold_as:
     - iVista Media Tablet 10.6
     - Aiptek MediaTablet 10000u
@@ -39,6 +40,6 @@ volume
 the wheels control the sound volume, the buttons mute;
 
 brush  
-the wheels are supposed to control brush width in a graphics editor, the buttons do nothing.
+the wheels are supposed to control brush width in a graphics editor, the buttons do nothing (supposed: right-click and double left-click).
 
 

@@ -1,1 +1,21 @@
 No response to buttons.
+
+The following information is based on the Silvercrest GTA2000 variant (aka Silvercrest SGT 10.6 A2), its manual and driver. (https://archive.org/details/silvercrest-driver)
+The official Windows driver has a tool ("Macrokey Manager") to reconfigure tablet K1-K26 buttons, wheels are not configurable, their defaults are:
+	Scroll mode:
+		Wheels: Scrolling (clock-wise - scroll down)
+		Wheel button: Switch between horizontal and vertical scrolling
+
+	Zoom mode:
+		Wheels: Zooming (clock-wise - zoom in)
+		Wheel button: Not assigned
+
+	Volume mode:
+		Wheels: System volume control (clock-wise - increase volume)
+		Wheel button: Toggle system sound on/off
+
+Further, there's a program that appears in the Control Panel of Windows that is used to configure the stylus: 
+	- pressure
+	- double-click distance
+	- both stylus buttons (defaults: bottom=right click; top=double left-click)
+	- working space selection (monitors or user-defined screen size, mode: pen or mouse)
