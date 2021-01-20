@@ -14,6 +14,6 @@ pen:
 frame_controls: 11 buttons 1 touch-ring
 sold_as:
     - Gaomon M10K 2018 version
-supported: partial
+supported: 
 supported_in:
 ---
