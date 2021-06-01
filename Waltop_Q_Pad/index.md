@@ -13,6 +13,7 @@ pen:
 sold_as:
     - Aiptek HyperPen Mini
 maybe_sold_as:
+    - Huion Q-PAD460 
     - NGS Flexi Style
     - VisTablet PenPad
     - iVistaTablet Q Flex Pad
