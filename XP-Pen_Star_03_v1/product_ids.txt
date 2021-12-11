@@ -1,0 +1,1 @@
+Bus 001 Device 006: ID 5543:0081 UC-Logic Technology Corp. TABLET 1060N
